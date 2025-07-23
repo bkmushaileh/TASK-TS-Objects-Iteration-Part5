@@ -60,8 +60,13 @@ interface FruitByTaste {
  */
 function fruitByTaste(fruits: Fruit[]): FruitByTaste {
   // Write your code here...
-
+  const fsweet = fruits.filter((fruit) => fruit.taste === "Sweet");
+  const fCitrusy = fruits.filter((fruit) => fruit.taste === "Citrusy");
+  const fTangy = fruits.filter((fruit) => fruit.taste === "Tangy");
+  console.log(fsweet);
+  console.log(fCitrusy);
+  console.log(fTangy);
   return {}; // replace empty object with what you see is fit
 }
-
+fruitByTaste(fruits);
 export { fruitByTaste, FruitByTaste };
